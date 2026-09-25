@@ -1,0 +1,63 @@
+{
+  "name": "Alertas Uptime Kuma -> Telegram",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "TU_WEBHOOK_PATH_AQUI",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "c176139c-8377-446b-9f88-9f3a6ab9d3a8",
+      "name": "Webhook",
+      "webhookId": "TU_WEBHOOK_PATH_AQUI"
+    },
+    {
+      "parameters": {
+        "chatId": "TU_CHAT_ID_AQUI",
+        "text": "={{ \"🔔 Alerta de monitoreo\\n\\n\" + $json.body.msg }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        224,
+        0
+      ],
+      "id": "67fb6590-ba78-4535-b530-6b22d764c4cd",
+      "name": "Send a text message",
+      "credentials": {
+        "telegramApi": {
+          "id": "6ecg746sM8csb7UC",
+          "name": "Telegram Bot"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "id": "yIR0DDJuPOTLPS6b",
+  "tags": []
+}
