@@ -21,7 +21,9 @@
       "parameters": {
         "chatId": "TU_CHAT_ID_AQUI",
         "text": "={{ \"🔔 Alerta de monitoreo\\n\\n\" + $json.body.msg }}",
-        "additionalFields": {}
+        "additionalFields": {
+          "appendAttribution": false
+        }
       },
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
