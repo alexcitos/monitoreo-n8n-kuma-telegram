@@ -25,7 +25,7 @@ Uptime Kuma ──(webhook POST)──▶ n8n ──(Bot API)──▶ Telegram
 ## En vivo
 
 La página pública de estado está disponible en
-**<https://status-alexrope.duckdns.org>**.
+**<https://status.alexrope.dev/status/portfolio-alex>**.
 
 ![Página de estado de Uptime Kuma con los 3 servicios operativos](uptime-kuma-status.png)
 
