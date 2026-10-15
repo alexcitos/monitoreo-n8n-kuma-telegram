@@ -1,5 +1,7 @@
 # Monitoreo de infraestructura con n8n + Uptime Kuma + Telegram
 
+[![Hablemos](https://img.shields.io/badge/Hablemos-alexrope.dev-2563eb?style=for-the-badge)](https://alexrope.dev/?utm_source=github&utm_medium=readme&utm_campaign=monitoreo-n8n-kuma-telegram#contacto)
+
 Sistema de alertas en tiempo real para servicios web autoalojados. Cuando un
 servicio cae (o se recupera), llega un mensaje a Telegram en segundos, sin
 tener que entrar a revisar paneles manualmente ni enterarse de la caída por un
@@ -63,6 +65,12 @@ la alerta de **Down**; al volver a levantar el contenedor, llegó la alerta de
 - **Telegram Bot API**: canal de notificación.
 - **Nginx**: reverse proxy con certificados TLS de **Let's Encrypt**.
 - **Oracle Cloud (Always Free)**: VM donde se aloja toda la infraestructura.
+
+## ¿Necesitas algo así para tu negocio?
+
+Monto infraestructura propia con monitoreo, alertas y respaldos, automatizaciones con n8n y sitios WordPress a la medida, sin depender de plataformas de pago.
+
+👉 **[Escríbeme en alexrope.dev](https://alexrope.dev/?utm_source=github&utm_medium=readme&utm_campaign=monitoreo-n8n-kuma-telegram#contacto)** · [LinkedIn](https://www.linkedin.com/in/alexrodriguezp) · [Más proyectos](https://github.com/alexcitos)
 
 ## Licencia
 
